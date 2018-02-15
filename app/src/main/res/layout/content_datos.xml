@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.coreupgrade.senddata.DatosActivity"
+    android:background="@drawable/black_metal"
+    tools:showIn="@layout/activity_datos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRTitle"
+        android:textSize="@dimen/textSize"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop2"
+        android:textColor="@color/colorPrimary"
+        android:text="DATOS RECIBIDOS"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRApellidos"
+        android:textSize="@dimen/textSize1"
+        android:layout_below="@+id/TxtRTitle"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop2"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/algo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRNombres"
+        android:textSize="@dimen/textSize1"
+        android:layout_below="@+id/TxtRApellidos"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop1"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/algo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRDni"
+        android:textSize="@dimen/textSize1"
+        android:layout_below="@+id/TxtRNombres"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop1"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/algo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRDireccion"
+        android:textSize="@dimen/textSize1"
+        android:layout_below="@+id/TxtRDni"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop1"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/algo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRCelular"
+        android:textSize="@dimen/textSize1"
+        android:layout_below="@+id/TxtRDireccion"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop1"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/algo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TxtRCorreo"
+        android:textSize="@dimen/textSize1"
+        android:layout_below="@+id/TxtRCelular"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/algo"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Fbshare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:focusable="true"
+        android:src="@drawable/ic_share"
+        app:backgroundTint="#FFF5EE" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SendData</string>
+    <string name="title">INGRESO DE DATOS</string>
+
+    <string name="Nombres">Ingrese su Nombre</string>
+    <string name="Apellidos">Ingrese su Apellido</string>
+    <string name="Dni">Ingrese su Dni</string>
+    <string name="Direccion">Ingrese su Dirección</string>
+    <string name="Celular">Numero Celular</string>
+    <string name="Correo">example@example.com</string>
+    <string name="title_activity_datos">DatosActivity</string>
+    <string name="algo">null</string>
+</resources>

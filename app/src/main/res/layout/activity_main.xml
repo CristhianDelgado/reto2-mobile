@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/black_metal"
+    tools:context="com.coreupgrade.senddata.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:id="@+id/TxtTitle"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/marginTop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/marginLeft"
+                    android:paddingRight="@dimen/marginLeft"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apellidos: "
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            android:layout_weight="3"
+                            app:hintTextAppearance="@color/colorPrimary">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/TxtApellidos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="0dp"
+                                android:textColor="@color/colorPrimary"
+                                android:inputType="textCapSentences|text|textCapWords"
+                                android:hint="@string/Apellidos" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombres: "
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            android:layout_weight="3"
+                            app:hintTextAppearance="@color/colorPrimary">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/TxtNombres"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:inputType="textCapSentences|text|textCapWords"
+                                android:hint="@string/Nombres" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DNI: "
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            android:layout_weight="3"
+                            app:hintTextAppearance="@color/colorPrimary">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/TxtDni"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginRight="80dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:inputType="number"
+                                android:maxLength="8"
+                                android:hint="@string/Dni" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Direccion: "
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            android:layout_weight="3"
+                            app:hintTextAppearance="@color/colorPrimary">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/TxtDireccion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:inputType="textCapSentences|text|textCapWords"
+                                android:hint="@string/Direccion" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Celular: "
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            android:layout_weight="3"
+                            app:hintTextAppearance="@color/colorPrimary">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/TxtCelular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginRight="80dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:hint="@string/Celular" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Correo: "
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            android:layout_weight="3"
+                            app:hintTextAppearance="@color/colorPrimary">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/TxtCorreo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/colorPrimary"
+                                android:hint="@string/Correo" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginBottom="25dp"
+                android:layout_marginEnd="25dp"
+                android:focusable="true"
+                android:src="@drawable/ic_next"
+                app:backgroundTint="#FFF5EE" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
